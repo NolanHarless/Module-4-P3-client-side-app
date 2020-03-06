@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Nolan Harless - Module 3</title>
+  <title>Nolan Harless - Module 4</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,7 +28,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-blue">
     <a class="navbar-brand" href="index.html">
-        Nolan H: <span class="blue-color-text">Module 3 Site</span>
+        Nolan H: <span class="blue-color-text">Module 4 Site</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -63,14 +63,30 @@
      </div>
       <input id="submit-button" type="submit" value="calculate average" name="submit" onclick="calculate()">
           <div id="InputTable">
-          <div class="classification">Average: </div><div class="outputText" id="TotalAverage">0</div>
+          <div class="classification">Average: <span class="outputText" id="TotalAverage">0</span></div>
       </div>
   </div>
   <!--container end-->
   </div>
-  <div class="p-3"></div>
 </div>
-  
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <label>Vue.JS</label>
+      <input class="form-control" type="number" v-model="input"/>
+      {{ fahrenheit }}
+    </div>
+    <div class="col-6">
+      <p>
+        <label>JavaScript Only</label>
+        <input id="inputFahrenheit" type="number" placeholder="Enter Fahrenheit here"
+        oninput="temp(this.value)"
+        onchange="temp(this.value)">
+      </p>
+      <p>Celsius Conversion: <span id="output"></span></p>
+    </div>
+  </div>
+</div>
 
  <!-- My Footer begins here -->
  <footer class="footer-style page-footer font-small">
@@ -89,7 +105,11 @@
   <script src="js/main.js"></script>
   <script src="js/javascript.js"></script>
   
+  
   <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/vue.js"></script>
+
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
