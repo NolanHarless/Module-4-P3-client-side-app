@@ -61,7 +61,7 @@
       <label>Number 3 </label><input type="number" name="num3" placeholder="Input number" id="num3"><br>
       <label>Number 4 </label><input type="number" name="num4" placeholder="Input number" id="num4">
      </div>
-      <input id="submit-button" type="submit" value="calculate avergae" name="submit" onclick="calculate()">
+      <input id="submit-button" type="submit" value="calculate average" name="submit" onclick="calculate()">
           <div id="InputTable">
           <div class="classification">Average: </div><div class="outputText" id="TotalAverage">0</div>
       </div>
@@ -88,40 +88,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/javascript.js"></script>
-  <script>
-      //Calculate Tip
-function calculateTip() {
-  var billTotal = document.getElementById("billTotal").value;
-  var serviceQuality = document.getElementById("serviceQuality").value;
-
-  //validate input
-  if (billTotal === "") {
-    alert("Please enter a valid bill amount.");
-    return;
-  }  
-
-  //Calculate tip amount here.
-  var total = (billTotal * serviceQuality);
-  total = Math.round(total * 100) / 100; //round the number.
-
-  total = total.toFixed(2); // money decimal points.
-
-  document.getElementById("totalTip").style.display = "block";
-  document.getElementById("tip").innerHTML = total;
-
-}
-
-//Hide the tip amount on load
-document.getElementById("totalTip").style.display = "none";
-document.getElementById("each").style.display = "none";
-
-//click to call function
-document.getElementById("calculate").onclick = function() {
-  calculateTip();
-
-};
-
-  </script>
+  
   <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
