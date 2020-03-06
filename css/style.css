@@ -94,3 +94,10 @@
     padding: 10px;
     border: 2px solid blue;
 }
+.table-form{
+    padding: 25px;
+    margin: auto;
+}
+label{
+    font-family: sans-serif;
+}
