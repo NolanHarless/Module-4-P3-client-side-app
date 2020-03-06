@@ -1,0 +1,96 @@
+.nav-blue{
+    background-color: #271033 !important;
+    border-bottom: 5px solid #FFE882;
+}
+.nav-blue a{
+    font-size: 1.25em;
+}
+.nav-blue a:hover{
+    color: white !important;
+}
+.active a{
+    color: #FFE882 !important;
+}
+.blue-color-text{
+    color: #388697 !important;
+}
+.footer-style{
+    background-color: #271033 !important;
+    color: #FFE882;
+}
+.footer-style a{
+    color: white;
+}
+.btn-blue{
+    background-color: #271033;
+    border: none;
+}
+.btn-blue:hover{
+    background-color: #388697;
+    border: none;
+}
+.orange-header{
+    background-color: #FA8334;
+    color: white;
+}
+.orange-text{
+    color: #FA8334;
+}
+.list-style ul li{
+    list-style-type: none;
+}
+.border-bt-yellow{
+    border-bottom: 10px solid #FFE882;
+}
+.text-align-center{
+    text-align: center;
+}
+.cnt-but{
+    margin: auto;
+    display: block;
+    width: 25%;
+}
+.org-header-2{
+    width: 100%;
+    background-color: #FA8334;
+    color: white;
+}
+.tip-calculator{
+    text-align: center;
+}
+#serviceQuality{
+    width: 30%;
+    font-size: 1.55em;
+    color: #271033;
+    border: 5px solid #271033;
+    background-color: #FA8334;
+}
+#serviceQuality:hover{
+    cursor:pointer;
+}
+#billTotal{
+    width: 30%;
+    font-size: 1.55em;
+    color: #271033;
+    border: 5px solid #271033;
+    background-color: #FA8334;
+}
+#totalTip{
+    text-align: center;
+    margin: auto;
+}
+#tip{
+    color: #271033;
+    font-size: 3em;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+.table-form label{
+    padding: 25px;
+    font-weight: bold;
+}
+#num1, #num2, #num3, #num4{
+    padding: 10px;
+    border: 2px solid blue;
+}
